@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <mate charest="utf-8" />
+    <title>Hello world!</title>
+    <link rel="stylesheet" href="style.css">  
+  </head>
+  <body>
+    <table style="border:1px solid black;">
+      <th style="background: aqua; width: 100%;">{{header}}</th>
+      {{#each users}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.age}}</td>
+      </tr>
+      {{/each}}
+    </table>
+    <!-- <h1>User List</h1>
+    <ul>
+      {{#each users}}
+      <li>Name: {{this.name}}</li>
+      <li>Age: {{this.age}}</li>
+      <br />
+      {{/each}}
+    </ul> -->
+  </body>
+</html>
